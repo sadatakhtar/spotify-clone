@@ -1,0 +1,26 @@
+.sideBarOptions{
+    display: flex;
+    align-items: center;
+    color: gray;
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+}
+.sideBar > hr {
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.sideBarOptions:hover{
+    color: white;
+}
+.sideBarOptions_icon{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sideBarOptions > p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
