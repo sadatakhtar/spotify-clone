@@ -35,12 +35,20 @@ function App() {
           type: "SET_PLAYLISTS",
           playlists: playlists,
         })
+        
       })
+      
     }
-
-  
+    spotify.getPlaylist('341krk8znfevpbu60s3r93hv5').then(response => 
+      dispatch({
+        type: 'SET_DISCOVER_WEEKLY',
+        discover_weekly: response,
+        
+      }))
+      
+     
   }, []);
-
+ console.log(user)
   return (
     <div className="App">
       {token ? (<Player spotify={spotify}/>) : (
